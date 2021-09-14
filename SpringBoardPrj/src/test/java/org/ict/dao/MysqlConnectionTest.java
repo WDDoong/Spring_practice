@@ -26,8 +26,8 @@ public class MysqlConnectionTest {
 		try(Connection con = 
 				DriverManager.getConnection(
 						"jdbc:mysql://127.0.0.1:3306/mysql?useSSL=false&serverTimezone=UTC",
-				"ict3",
-				"ict3"
+				"root",
+				"mysql"
 				)){
 			log.info(con);
 			log.info("MySQL 연결 완료");
